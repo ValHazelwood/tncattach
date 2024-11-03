@@ -18,4 +18,4 @@
 #define MAX_PAYLOAD MTU_MAX
 
 void kiss_serial_read(uint8_t sbyte);
-int kiss_write_frame(int serial_port, uint8_t* buffer, int frame_len);
+int kiss_write_frame(int type, char* tcp_host, int tcp_port, int serial_port, uint8_t* buffer, int frame_len);
