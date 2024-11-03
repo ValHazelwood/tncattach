@@ -39,9 +39,10 @@ Attach TNC devices as system network interfaces
   -i, --ipv4=IP_ADDRESS      Configure an IPv4 address on interface
   -n, --noipv6               Filter IPv6 traffic from reaching TNC
       --noup                 Only create interface, don't bring it up
-  -T, --kisstcp              Use KISS over TCP instead of serial port
-  -H, --tcphost=TCP_HOST     Host to connect to when using KISS over TCP
-  -P, --tcpport=TCP_PORT     TCP port when using KISS over TCP
+  -T, --kisstype= 0 (TCP) | 1 (UDP)
+                             Use KISS over TCP|UDP instead of serial port
+  -H, --host=HOST | 0.0.0.0  Host (0.0.0.0 for TCP server mode only) to connect
+                             to when using KISS over TCP|UDP
   -t, --interval=SECONDS     Maximum interval between station identifications
   -s, --id=CALLSIGN          Station identification data
   -d, --daemon               Run tncattach as a daemon
